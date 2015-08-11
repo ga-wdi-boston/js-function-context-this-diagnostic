@@ -8,13 +8,14 @@
 //
 // NOTE: Line numbers are annotated line numbers, not editor line numbers.
 
-/*1*/ var alderaan = "Boom";
+/*1*/ var alderaan = { name: 'Alderaan' };
 /*2*/ var deathStar = function deathStar(){
 /*3*/   var laserQuantity = 1;
 /*4*/   var laserSize = "huge";
 /*5*/   var fire = function fire(){
-/*6*/     // some code
+/*6*/     console.log(this);
 /*7*/   };
+        deathStar.fire();
 /*8*/ };
 
 // Suppose we had declared another function between line 7 and 8. Would that
@@ -23,15 +24,15 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = true;
 //
 
-// Which scope(s) may access the variable `laswerQuantity`? Choose one or many
+// Which scope(s) may access the variable `laserQuantity`? Choose one or many
 // of the following:
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = [deathStar, fire];
 //
 
 // Which of the following are defined within the scope of the `fire` function?
@@ -39,14 +40,14 @@ var q2 = [/* your answer here */];
 //
 //     `['alderaan', 'chartreuse', 'frickinLasers', 'laserSize']`
 //
-var q3 = [/* your answer here */];
+var q3 = [laserSize, alderaan];
 //
 
 // Edit line 6 to read `conosole.log(this)`. Insert a line between 7 and 8 that
 // invokes `fire`. If we invoked `deathStar` in a browser environment, what
 // would the execution context of line 6 be?
 //
-var q4 = "/* your answer here */";
+var q4 = "deathStar";
 //
 
 // Edit line 1 to read `var alderaan = { name: 'Alderaan' }`.
@@ -58,5 +59,15 @@ var q4 = "/* your answer here */";
 // the context of `alderaan`.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  var alderaan = { name: 'Alderaan',
+    deathStar = {
+      laserQuantity: 1,
+      laserSize: 'huge',
+      var fire = function fire (){
+        console.log(this);
+      };
+    }
+  };
 };
+
+alderaan.deathStar.fire();
