@@ -62,3 +62,6 @@ var q5 = function fireOnAlderaan (target) {
 };
 
 q5(alderaan);
+
+// Comfort: 5
+// Clarity: 3
