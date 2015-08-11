@@ -8,15 +8,13 @@
 //
 // NOTE: Line numbers are annotated line numbers, not editor line numbers.
 
-/*1*/ var alderaan = { name: 'Alderaan' };
-/*2*/ var deathStar = function deathStar(){
-/*3*/   var laserQuantity = 1;
-/*4*/   var laserSize = "huge";
-/*5*/   var fire = function fire(){
-/*6*/     console.log(this);
-/*7*/   };
-        fire();
-/*8*/ };
+      var alderaan = { name: 'Alderaan' };
+      var deathStar = { laserQuantity: 1,
+                        laserSize: 'huge',
+                        fire: function() {
+                          console.log(this);
+                        },
+                      };
 
 // Suppose we had declared another function between line 7 and 8. Would that
 // new function have access to the value stored in the variable `laseQuantity`
@@ -64,16 +62,4 @@ var q4 = "{ window: [Circular],
 // the context of `alderaan`.
 //
 
-var deathStar = { name: 'Alderaan',
-                  laserQuantity: 1,
-                  laserSize: 'huge',
-                  fire: function() {
-                    console.log(this);
-                  },
-                };
-
-var q5 = function fireOnAlderaan () {
-  deathStar.fire();
-}
-
-fireOnAlderaan();
+var q5 = deathStar.fire.call(alderaan);
