@@ -10,7 +10,7 @@ Fork and clone this repository. Move into the cloned directory and run `npm inst
 
 Edit `src/assessment.js` and complete each question. You may use any resource, other than someone else in the classroom, to help you complete the quiz.
 
-Check your answers as you work with `grunt test`.
+<!-- Check your answers as you work with `grunt test`. -->
 
 Commit and push your changes.
 
