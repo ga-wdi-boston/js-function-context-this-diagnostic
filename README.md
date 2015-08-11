@@ -6,7 +6,9 @@ You have 30 minutes.
 
 ## Instructions
 
-Fork and clone this repository. <!-- Move into the cloned directory and run `npm install`. -->
+Fork and clone this repository.
+
+<!-- Move into the cloned directory and run `npm install`. -->
 
 Edit `src/assessment.js` and complete each question. You may use any resource, other than someone else in the classroom, to help you complete the quiz.
 
