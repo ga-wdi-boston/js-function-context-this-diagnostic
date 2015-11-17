@@ -51,3 +51,8 @@ var q2 = [deathStar, fire, global];
 var q5 = function fireOnAlderaan () {
   deathStar.fire(alderaan)
 };
+
+comfort: 5
+clarity: 5
+
+I used the js-scope-lesson from week 1 (the one Jeff slacked)
