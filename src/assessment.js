@@ -14,20 +14,20 @@
 /*8*/ };
 
 // Suppose we had declared another function between line 7 and 8. Would that
-// new function have access to the value stored in the variable `laseQuantity`
+// new function have access to the value stored in the variable `laserQuantity` **typo**
 // on line 3?
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = 'true'; //within scope of deathStar variable
 //
 
-// Which scope(s) may access the variable `laswerQuantity`? Choose one or many
+// Which scope(s) may access the variable `laserQuantity`? Choose one or many **typo**
 // of the following:
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -49,5 +49,6 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  var temp = deathstar.fire(); //unsure, but deathstar.fire(alderann) doesn't feel like a binding.
+  var blammo = temp.bind(alderann;)
 };
