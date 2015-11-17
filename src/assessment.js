@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = 'false'; //within scope of deathStar variable
+var q1 = 'true'; //within scope of deathStar variable
 //
 
 // Which scope(s) may access the variable `laserQuantity`? Choose one or many **typo**
@@ -27,7 +27,7 @@ var q1 = 'false'; //within scope of deathStar variable
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = ['deathStar'];
+var q2 = ['fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
