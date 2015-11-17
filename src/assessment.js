@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = false;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['fire', 'deathStar'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -47,7 +47,13 @@ var q2 = [/* your answer here */];
 // context of `alderaan`. In other words, we want to *reference* the `fire`
 // method and temporarily bind it (or, change `this`) to `alderaan` before
 // executing it.
+
+
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  alderaan.fire.bind(alderaan)
 };
+
+fireOnAlderaan();
+
+//probably not. 
