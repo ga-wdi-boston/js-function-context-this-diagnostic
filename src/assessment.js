@@ -14,20 +14,20 @@
 /*8*/ };
 
 // Suppose we had declared another function between line 7 and 8. Would that
-// new function have access to the value stored in the variable `laseQuantity`
+// new function have access to the value stored in the variable `laserQuantity`
 // on line 3?
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = false;
 //
 
-// Which scope(s) may access the variable `laswerQuantity`? Choose one or many
+// Which scope(s) may access the variable `laserQuantity`? Choose one or many
 // of the following:
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['deathStar', 'fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -49,5 +49,8 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  console.log(this);
 };
+
+deathstar.fireOnAlderaan(alderaan);
+
