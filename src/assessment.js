@@ -34,7 +34,7 @@ var q1 = /* your answer here */;
 var q2 = [/* your answer here */];
 //
 
-// Which of the following are defined within the scope of the `fire` function?
+// Which of the following are accessible within the scope of the `fire` function?
 // Choose one or all of the following:
 //
 //     `['alderaan', 'chartreuse', 'frickinLasers', 'laserSize']`
