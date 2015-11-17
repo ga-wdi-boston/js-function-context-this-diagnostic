@@ -2,10 +2,6 @@
 
 // Study the following code. Then answer the questions that follow.
 //
-// NOTE: You must answer the first four questions before answer the last
-// question. The last question asks you to change this code in a way that
-// renders previous answers nonsensical.
-//
 // NOTE: Line numbers are annotated line numbers, not editor line numbers.
 
 /*1*/ var alderaan = "Boom";
@@ -34,28 +30,22 @@ var q1 = /* your answer here */;
 var q2 = [/* your answer here */];
 //
 
-// Which of the following are accessible within the scope of the `fire` function?
-// Choose one or all of the following:
+// Study the following code. Then answer the questions that follow.
 //
-//     `['alderaan', 'chartreuse', 'frickinLasers', 'laserSize']`
-//
-var q3 = [/* your answer here */];
-//
+// NOTE: Line numbers are annotated line numbers, not editor line numbers.
 
-// Edit line 6 to read `conosole.log(this)`. Insert a line between 7 and 8 that
-// invokes `fire`. If we invoked `deathStar` in a browser environment, what
-// would the execution context of line 6 be?
-//
-var q4 = "/* your answer here */";
-//
+/*1*/ var alderaan = { name: 'Alderaan' };
+/*2*/ var deathStar = {
+/*3*/   laserQuantity: 1,
+/*4*/   laserSize: 'huge',
+/*5*/   fire: function fire(){
+/*6*/     // some code
+/*7*/   }
+/*8*/ };
 
-// Edit line 1 to read `var alderaan = { name: 'Alderaan' }`.
-//
-// Refactor `deathStar` to be an object with properties and methods instead of
-// function within a function.
-//
 // Finally, write the code that would call the `deathStar`'s `fire` method in
-// the context of `alderaan`.
+// the context of `alderaan`. In other words, we want to *reference* the `fire`
+// method and bind it (or, change `this`) to `alderaan`.
 //
 var q5 = function fireOnAlderaan () {
   // your code here
