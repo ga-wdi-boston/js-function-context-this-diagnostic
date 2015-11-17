@@ -45,7 +45,8 @@ var q2 = [/* your answer here */];
 
 // Write the code that would call the `deathStar`'s `fire` method in the
 // context of `alderaan`. In other words, we want to *reference* the `fire`
-// method and bind it (or, change `this`) to `alderaan`.
+// method and temporarily bind it (or, change `this`) to `alderaan` before
+// executing it.
 //
 var q5 = function fireOnAlderaan () {
   // your code here
