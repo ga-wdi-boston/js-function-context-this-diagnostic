@@ -27,7 +27,7 @@ var q1 = true;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = ['deathStar', 'fire'];
+var q2 = ['fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
