@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = /* your answer here */;false
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = [/* your answer here */]; 'deathStar', 'fire'
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -50,4 +50,11 @@ var q2 = [/* your answer here */];
 //
 var q5 = function fireOnAlderaan () {
   // your code here
+
+  fireOnAlderaan.call(alderaan);
+
+  // or maybe:
+  var q5 = fireOnAlderaan.call(alderaan);
+
+  // in both cases, this == alderaan
 };
