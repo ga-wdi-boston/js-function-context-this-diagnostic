@@ -14,20 +14,26 @@
 /*8*/ };
 
 // Suppose we had declared another function between line 7 and 8. Would that
-// new function have access to the value stored in the variable `laseQuantity`
+// new function have access to the value stored in the variable `laserQuantity`
 // on line 3?
 //
-//     `true` or `false`
-//
-var q1 = /* your answer here */;
+      var answer = true;
+//  I say this because it's still within the scope
+//  of where the function is originally being
+//  called and lexical scope has vision up but not
+//  down.  Thus how you get the answer var q1.
+
+      var q1 = 1;
 //
 
-// Which scope(s) may access the variable `laswerQuantity`? Choose one or many
+// Which scope(s) may access the variable `laserQuantity`? Choose one or many
 // of the following:
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
+      var answer = deathStar, fire;
+//    alderaan is a global variable so it cannot look inside the function.  global for the same reason.  It is being defined inside of deathStar so that has access to it.  And fire is a function defined inside of deathStar so that if my understanding of lexical scope is correct, that has access as well.
 //
-var q2 = [/* your answer here */];
+      var q2 = 1;
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -49,5 +55,5 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  deathStar.fire.bind(alderaan);
 };
