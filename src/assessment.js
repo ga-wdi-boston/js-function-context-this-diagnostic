@@ -49,5 +49,5 @@ var q2 = deathStar, fire
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  return deathStar.fire.bind(alderaan);
+  return deathStar.fire.call(alderaan);
 };
