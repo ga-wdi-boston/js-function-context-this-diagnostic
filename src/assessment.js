@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = true - because it is still within the function deathStar;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['deathStar', 'fire', 'global'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -39,7 +39,7 @@ var q2 = [/* your answer here */];
 /*3*/   laserQuantity: 1,
 /*4*/   laserSize: 'huge',
 /*5*/   fire: function fire(){
-/*6*/     // some code
+/*6*/     deathStar.fire(this);
 /*7*/   }
 /*8*/ };
 
@@ -49,5 +49,10 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  alderaan.call(fire);
 };
+
+Comfort: 2
+Clarity: 2
+(I am still trying to build my JS skills with tutorials and reading code. I think I am struggling more with basics in writing functions than in understanding the issue of scope.)
+I used class notes from the lesson yesterday and the scope review from unit 1 to help with this assessment.
