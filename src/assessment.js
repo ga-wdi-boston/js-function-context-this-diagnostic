@@ -17,9 +17,8 @@
 // new function have access to the value stored in the variable `laseQuantity`
 // on line 3?
 //
-//     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = true;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,8 +26,8 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
-//
+var q2 = [fire];
+//laserQuantity is defined WITHIN the scope of deathStar, so it can be modified or used within that scope, but deathStar can't do anything with it before the point that it is defined.
 
 // Study the following code. Then answer the questions that follow.
 //
@@ -49,5 +48,5 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  deathStar.fire.call(alderaan)
 };
