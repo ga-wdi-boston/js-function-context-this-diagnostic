@@ -39,7 +39,7 @@ var q2 = [deathStar, fire];
 /*3*/   laserQuantity: 1,
 /*4*/   laserSize: 'huge',
 /*5*/   fire: function fire(){
-/*6*/     // some code
+/*6*/     // some code console.log(this);
 /*7*/   }
 /*8*/ };
 
