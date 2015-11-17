@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = true;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = [deathStar, fire];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -39,9 +39,10 @@ var q2 = [/* your answer here */];
 /*3*/   laserQuantity: 1,
 /*4*/   laserSize: 'huge',
 /*5*/   fire: function fire(){
-/*6*/     // some code
+/*6*/     console.log(this);
 /*7*/   }
 /*8*/ };
+          deathStar.fire();
 
 // Write the code that would call the `deathStar`'s `fire` method in the
 // context of `alderaan`. In other words, we want to *reference* the `fire`
@@ -49,5 +50,6 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  console.log(this)
 };
+  fire.call(deathStar);
