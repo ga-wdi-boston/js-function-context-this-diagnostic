@@ -19,7 +19,7 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
+var q1 = true;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['deathStar', 'fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -49,5 +49,8 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  // bind alderaan to set context
+  var alderaanIsBurning = deathStar.fire.bind(alderaan);
+  // invoke the function, because this is determined at runtime
+  alderaanIsBurning();
 };
