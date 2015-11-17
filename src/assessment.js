@@ -17,9 +17,9 @@
 // new function have access to the value stored in the variable `laseQuantity`
 // on line 3?
 //
-//     `true` or `false`
+
 //
-var q1 = /* your answer here */;
+var q1 = true;
 //
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
@@ -27,7 +27,7 @@ var q1 = /* your answer here */;
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = [deathStar, fire, global];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -49,5 +49,10 @@ var q2 = [/* your answer here */];
 // executing it.
 //
 var q5 = function fireOnAlderaan () {
-  // your code here
+  deathStar.fire(alderaan)
 };
+
+comfort: 5
+clarity: 5
+
+I used the js-scope-lesson from week 1 (the one Jeff slacked)
