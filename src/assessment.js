@@ -19,15 +19,15 @@
 //
 //     `true` or `false`
 //
-var q1 = /* your answer here */;
-//
+var q1 = true;
+it would because it would be within the function deathstar.
 
 // Which scope(s) may access the variable `laswerQuantity`? Choose one or many
 // of the following:
 //
 //     `['alderaan', 'deathStar', 'fire', 'global']`
 //
-var q2 = [/* your answer here */];
+var q2 = ['deathStar', 'fire'];
 //
 
 // Study the following code. Then answer the questions that follow.
@@ -47,7 +47,11 @@ var q2 = [/* your answer here */];
 // context of `alderaan`. In other words, we want to *reference* the `fire`
 // method and temporarily bind it (or, change `this`) to `alderaan` before
 // executing it.
-//
+
+
 var q5 = function fireOnAlderaan () {
-  // your code here
-};
+  console.log(this);
+}
+fireOnAlderaan.call(alderaan);
+
+This is the Call/Apply Invocation Pattern. Not sure how to fully execute it.
