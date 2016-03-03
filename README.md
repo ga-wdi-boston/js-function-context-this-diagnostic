@@ -18,7 +18,7 @@ value of `this` when invoked in differenct contexts.
 1.  Follow the directions given in [diagnostic.md](diagnostic.md).
 1.  Before the alotted time is up, push to your fork and issue a pull request.
 
-Your pull request description should contain a "fist of five" for comfort and
+Your pull request description should contain a "fist to five" for comfort and
 clarity. Additionally, you should mention the resources you used to help you
 complete this assessment. For example:
 
