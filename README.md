@@ -43,6 +43,10 @@ some of the most common sources of errors. After `grunt nag` passes, you should
 run `grunt test` to run the included tests. Tests will tell you whether of not
 your responses are correct.
 
+**Note**: For this diagnostic, `grunt nag` will complain about example code we
+have provided for the questions. You are not required to fix this warnings. Only
+fix warnings that occur on lines you have written for your response.
+
 ## [License](LICENSE)
 
 Source code distributed under the MIT license. Text and other assets copyright
