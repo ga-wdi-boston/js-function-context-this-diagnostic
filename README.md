@@ -43,8 +43,7 @@ some of the most common sources of errors. After `grunt nag` passes, you should
 run `grunt test` to run the included tests. Tests will tell you whether of not
 your responses are correct.
 
-[License](LICENSE)
-------------------
+## [License](LICENSE)
 
 Source code distributed under the MIT license. Text and other assets copyright
 General Assembly, Inc., all rights reserved.
