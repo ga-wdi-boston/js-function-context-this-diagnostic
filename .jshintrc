@@ -1,0 +1,16 @@
+{
+  "curly": true,
+  "devel": true,
+  "eqeqeq": true,
+  "esnext": true,
+  "globalstrict": true,
+  "jasmine": true,
+  "latedef": "nofunc",
+  "noarg": true,
+  "node": true,
+  "nonew": true,
+  "quotmark": "single",
+  "strict": true,
+  "undef": true,
+  "unused": true
+}
