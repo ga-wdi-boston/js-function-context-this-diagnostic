@@ -2,28 +2,46 @@
 
 # JavaScript Scope and Context Diagnostic
 
-You have 30 minutes.
+The purpose of this diagnostic is to determine whether you can identify the
+value of `this` when invoked in differenct contexts.
+
+## Prerequisites
+
+-   [ga-wdi-boston/js-context-this](https://github.com/ga-wdi-boston/js-context-this)
 
 ## Instructions
 
-Fork and clone this repository.
+1.  Fork and clone this repository.
+1.  Change into the new directory.
+1.  Install dependencies.
+1.  Create and checkout a new branch, named `response`.
+1.  Follow the directions given in [diagnostic.md](diagnostic.md).
+1.  Before the alotted time is up, push to your fork and issue a pull request.
 
-<!-- Move into the cloned directory and run `npm install`. -->
+Your pull request description should contain a "fist of five" for comfort and
+clarity. Additionally, you should mention the resources you used to help you
+complete this assessment. For example:
 
-Edit `src/assessment.js` and complete each question. You may use any resource, other than someone else in the classroom, to help you complete the quiz.
-
-<!-- Check your answers as you work with `grunt test`. -->
-
-Commit and push your changes.
-
-Submit a pull request. Your pull request description should contain a "fist of five" for comfort and clarity. Additionally, you should mention the resources you used to help you complete this assessment. For example:
-
-```
+```md
 Comfort: 3
 Clarity: 3
 
 I used Google and my class notes to help with this assessment.
 ```
+
+You may wish to refer to ["How do I submit diagnostics?"](https://github.com/ga-wdi-boston/meta/wiki/Diagnostics)
+and other [FAQs](https://github.com/ga-wdi-boston/meta/wiki/) related to
+[forking, cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone),
+and [pull requests](https://github.com/ga-wdi-boston/meta/wiki/PullRequest).
+
+You may use **any resource** other than each other to complete this diagnostic.
+This includes referencing talk materials, appropriate documentation, and
+searching for help online.
+
+You should be running `grunt nag` before diagnosing any bugs, since it finds
+some of the most common sources of errors. After `grunt nag` passes, you should
+run `grunt test` to run the included tests. Tests will tell you whether of not
+your responses are correct.
 
 [License](LICENSE)
 ------------------
