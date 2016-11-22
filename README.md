@@ -7,7 +7,7 @@ value of `this` when invoked in differenct contexts.
 
 ## Prerequisites
 
--   [ga-wdi-boston/js-context-this](https://github.com/ga-wdi-boston/js-context-this)
+-   [ga-wdi-boston/js-function-context-this](https://github.com/ga-wdi-boston/js-function-context-this)
 
 ## Instructions
 
