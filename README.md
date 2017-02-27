@@ -15,7 +15,7 @@ value of `this` when invoked in differenct contexts.
 1.  Change into the new directory.
 1.  Install dependencies.
 1.  Create and checkout a new branch, named `response`.
-1.  Follow the directions given in [diagnostic.js](diagnostic.js).
+1.  Follow the directions given in [lib/diagnostic.js](lib/diagnostic.js).
 1.  Before the alotted time is up, push to your fork and issue a pull request.
 
 Your pull request description should contain a "fist to five" for comfort and
